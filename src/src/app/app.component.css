@@ -1,0 +1,55 @@
+[class*='col-'] {
+  float: left;
+  padding-right: 15px;
+  padding-bottom: 15px;
+}
+[class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+button {
+  border-style:none;
+}
+
+.used {
+  background-color: #ff0000
+}
+
+.free {
+  background-color: #00ff00
+}
+
+input {
+  border: 1px black;
+  border-style: solid;
+  border-radius: 6px;
+  height: 30px;
+  width: 98%;
+}
+
+.col-1-5 {
+  width: 15%;
+}
+
+.grid {
+  margin: 0;
+}
+
+.module {
+  margin:5px;
+  height: 50px;
+  max-width: 100px;
+  min-width: 60px;
+  border: 1px solid black;
+  text-align: center;
+  border-radius:8px;
+}
+.module:hover {
+  background-color: #EEE;
+  cursor: pointer;
+  color: #607d8b;
+}
+.grid-pad {
+  padding: 1px 0;
+}
+

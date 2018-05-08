@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Total Training Digital Card
+  </h1>
+  <br><br>
+</div>
+<div class="grid grid-pad">
+  <a *ngFor="let lesson of lessonsService.lessons" class="col-1-5">
+      <div class="module {{lesson.type}}" (click)="lessonsService.useLesson(lesson.id)">
+        <h4>{{lesson.date}}</h4>
+      </div>
+  </a>
+</div>
+<br>
+
+<br><br>
+<button (click)="lessonsService.resetLessons()">
+  <div>
+    <h4>Reset all lessons</h4>
+  </div>
+</button>
+<br><br>
+<input type="text" name="mail" placeholder="write your mail here">
+<br><br>
+
+<input type="submit">
